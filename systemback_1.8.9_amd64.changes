@@ -1,0 +1,132 @@
+Format: 1.8
+Date: Fri, 07 Jan 2021 15:24:25 +0800
+Source: systemback
+Binary: libsystemback libsystemback-dbg systemback systemback-cli systemback-cli-dbg systemback-dbg systemback-efiboot-amd64 systemback-locales systemback-scheduler systemback-scheduler-dbg
+Built-For-Profiles: noudeb
+Architecture: source amd64 all
+Version: 1.8.9
+Distribution: release
+Urgency: low
+Maintainer: Kende Krisztián <nemh@freemail.hu>, Zhang Weijia (randoms) <randoms@bwbot.org>
+Changed-By: Bluewhale Robot <randoms@bwbot.org>
+Description:
+ libsystemback - Systemback shared library
+ libsystemback-dbg - Debug symbols for libsystemback
+ systemback - Simple system backup and restore application with extra features
+ systemback-cli - Systemback command line interface
+ systemback-cli-dbg - Debug symbols for systemback-cli
+ systemback-dbg - Debug symbols for systemback
+ systemback-efiboot-amd64 - Systemback boot files
+ systemback-locales - Systemback localizations files
+ systemback-scheduler - Systemback scheduler daemon
+ systemback-scheduler-dbg - Debug symbols for systemback-scheduler
+Changes:
+ systemback (1.8.9) release; urgency=low
+ .
+   * 1.8.9
+   * Add support for NVMe
+ .
+   * 1.8.8
+   * Merge from https://github.com/fconidi/Systemback_source-1.9.4
+   * Add support for NVMe
+ .
+   * 1.8.7
+   * Fix symbol link missing after install system images
+ .
+   * 1.8.6
+   * Add sbignore file, set include user data as default, set autoiso as default
+ .
+   * 1.8.5
+   * Add support for Ubuntu 20.04 and large iso
+ .
+   * 1.8.402
+   * Fix Live creation when the '/snap' directory is missing
+ .
+   * 1.8.400
+   * Add support to installed Snap packages
+   * Remove support to old (version 1.5 and below) restore points
+   * Fix possible segmentation fault when checking directory mount status
+   * Fix translation files detection in DBGLEV=3 mode
+   * Fix source code compilation under Ubuntu 14.04
+   * Import new Romanian translations
+ .
+   * 1.8.300
+   * Fix the possible conflict with the APT when updating the package index files
+   * Import new EFI boot files from the Ubuntu 16.04 LTS
+   * Import new Czech, English (United Kingdom), Hungarian, Romanian and Spanish
+     translations
+ .
+   * 1.8.202
+   * Improve compatibility with apt 1.2
+   * Update EFI boot files
+   * Import new Spanish, Danish and Chinese (Simplified) translations
+ .
+   * 1.8.201
+   * Fix restore point creation when the storage dir path contains symbolic link
+   * Fix some directory date and time settings when creating restore points
+ .
+   * 1.8.200
+   * Fix line breaking when printing the mounted filesystems in DBGLEV=3 mode
+   * Fix error messages printing when upgrading the system
+   * Fix the GRUB menu height on the Live when the system contains xorg.conf
+     file(s)
+   * Detect and takes into account the configuration file(s) in the
+     /etc/X11/xorg.conf.d directory
+   * Update EFI boot files
+   * Import new Czech translations
+ .
+   * 1.8.102
+   * Fix possible segmentation fault when try to minimize the window with the
+     button
+ .
+   * 1.8.101
+   * Fix partition information reading on Ubuntu 16.04
+ .
+   * 1.8.100
+   * Fix incorrect symlink following when creating a new incremental restore
+     point (TeamViewer global.conf bug)
+   * Add a new debug level (DBGLEV=3) for more debug information
+   * Some minor fixes and improvements
+   * Import new Hungarian translations
+Checksums-Sha1:
+ d044494e2fb04464c5d181907f3439f2e2e7a07b 1334 systemback_1.8.9.dsc
+ 9bb4738849a68a3f6b1e3492aebb0ef4df2dcf1b 1755948 systemback_1.8.9.tar.xz
+ 18132d17a5de33de36c94d6f21337148ff06ea1f 1026842 libsystemback-dbg_1.8.9_amd64.deb
+ 4bea0cd90664b869ee20dace483057e18da33a5e 108726 libsystemback_1.8.9_amd64.deb
+ 2ffd832fafb9c3de7c0fc511f91daf5ca22a1542 591002 systemback-cli-dbg_1.8.9_amd64.deb
+ cdbae9a78ad4bb3748dec73aeb143f409601ff1f 29750 systemback-cli_1.8.9_amd64.deb
+ 738ae7d60057fa1b3913979c3f945634d8520fd4 2909172 systemback-dbg_1.8.9_amd64.deb
+ 7fc0564c98c4565053664c4ddd3d62f8301cfb5f 931530 systemback-efiboot-amd64_1.8.9_all.deb
+ 13961788fad92a280cc3e4ba678c7b89a74e7a76 92356 systemback-locales_1.8.9_all.deb
+ 8112ec5baf9d877efcdb093399358d380feadef6 912004 systemback-scheduler-dbg_1.8.9_amd64.deb
+ c7842badf3910d5ec472f37ba1aa24df33d1fcec 21548 systemback-scheduler_1.8.9_amd64.deb
+ e67752cb5ef4bc702600e0907482ec5a3e06b559 15419 systemback_1.8.9_amd64.buildinfo
+ a7963e355bc0869c71db7067d08cbc6c93765dd6 883404 systemback_1.8.9_amd64.deb
+Checksums-Sha256:
+ 94c56de588c564d5d8a7939c5987ba9e3a400c417c35f44f4ac01939b0a5e4fa 1334 systemback_1.8.9.dsc
+ 970600da98202eb66186fa62693015114a10d6a7cfb2cd25dc5c2ece8b17c2b6 1755948 systemback_1.8.9.tar.xz
+ 727ab22ded277dc285dd1df3d97c6251459a0a25388dd51640095b084df0aea7 1026842 libsystemback-dbg_1.8.9_amd64.deb
+ 973c6ced783e534796bc6578e2415bf7f61d3dffd17119f48b183f93cc264db5 108726 libsystemback_1.8.9_amd64.deb
+ b43c8e1f5da9a370ceb937e57f874f7b0829bd9f81897b38dee4f002d0c2a804 591002 systemback-cli-dbg_1.8.9_amd64.deb
+ 8d2682e3f3fdeb8b2eac92714c97019ac1d022317b161b5468b23f4240561850 29750 systemback-cli_1.8.9_amd64.deb
+ a49a5ed3eac46ea7fe1df784d532b0bff90e20645987083c548f1113a179c053 2909172 systemback-dbg_1.8.9_amd64.deb
+ f347a48a4e02ddd246e152568b9a27b2b367fd327e335a81f7c76b7c5b1ce4be 931530 systemback-efiboot-amd64_1.8.9_all.deb
+ 7e0c79580a1c99ab8c741077cabff38592d72c35e77043f3edef76ae34ea923a 92356 systemback-locales_1.8.9_all.deb
+ 4990fe0b87ffee59cb7b69d8d628760672536256dbefff43eca94c4bdf15cd29 912004 systemback-scheduler-dbg_1.8.9_amd64.deb
+ 2687184e8ac1d6601a9c69a8075d0fde12b25eb25df0c8dfd0de22d5f580bf2d 21548 systemback-scheduler_1.8.9_amd64.deb
+ 68ade3074adf7982e3afd5c5d79d9d363581a37b9394e2fbedb21eaeda04855e 15419 systemback_1.8.9_amd64.buildinfo
+ ec1f9476d02d71d23c3f054b3bd8aa00c3541dafedfb15fb1d59bd33be506102 883404 systemback_1.8.9_amd64.deb
+Files:
+ da05d95708df80dcb6aba77059f9c72c 1334 admin optional systemback_1.8.9.dsc
+ cbacd2ed62267ef7d10238c852d0bc06 1755948 admin optional systemback_1.8.9.tar.xz
+ 057dbd4651b91a4a2729bf2af92a272d 1026842 debug extra libsystemback-dbg_1.8.9_amd64.deb
+ 7d1cfda882439186a4cb55db5b3dcf48 108726 libs optional libsystemback_1.8.9_amd64.deb
+ 5f55e26ac69e235bf5a0f2f4ea1a4750 591002 debug extra systemback-cli-dbg_1.8.9_amd64.deb
+ b0fdc277a2804102752fb9e67d135234 29750 admin optional systemback-cli_1.8.9_amd64.deb
+ 71dcf7d0095fcf845fdf3e0fad30d2d1 2909172 debug extra systemback-dbg_1.8.9_amd64.deb
+ 36cf9cfdaa8092f924b544ba484130aa 931530 admin optional systemback-efiboot-amd64_1.8.9_all.deb
+ d905c137177f39d22c0df1b73cc3dca9 92356 admin optional systemback-locales_1.8.9_all.deb
+ 8a3e0049ebbff59115fad1ae7d675595 912004 debug extra systemback-scheduler-dbg_1.8.9_amd64.deb
+ ba987e291aaa495a19ea89864e02ef6c 21548 admin optional systemback-scheduler_1.8.9_amd64.deb
+ bd191830fcb97b1ecfd2e6f1ff0594ef 15419 admin optional systemback_1.8.9_amd64.buildinfo
+ b4325eabd34bae52196bf37c8004e7ef 883404 admin optional systemback_1.8.9_amd64.deb

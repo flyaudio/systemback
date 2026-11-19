@@ -1,11 +1,11 @@
 *.o
 *.log
-*.deb
+#*.deb
 *.build
 build-*
-*.changes
-*.dsc
-*.tar.xz
+#*.changes
+#*.dsc
+#*.tar.xz
 debian/
 *.qm
 *.so
